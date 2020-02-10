@@ -10,6 +10,7 @@ function expand() {
   } else {
     document.getElementById("input_box").classList.remove("my-input-box");
     document.getElementById("input_box").classList.add("hidden-input-box");
+    console.log("You have search: "+ document.getElementById("input_box").value)
     document.getElementById("input_box").value = null;
     setTimeout( function() {
         document.getElementById("input_box").style.display = "none"
